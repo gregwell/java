@@ -18,16 +18,19 @@ public class Circle extends Figure implements Printable{
 
     @Override
     double calculateArea() {
-        return Math.PI*r;
+        area = Math.PI*r;
+        return area;
     }
 
     @Override
     double calculatePerimeter() {
-        return 2*Math.PI*r;
+        perimeter = 2*Math.PI*r;
+        return perimeter;
     }
 
     @Override
     public void print() {
-
+        System.out.println("Name: " + name);
+        System.out.println("radius: " + r);
     }
 }

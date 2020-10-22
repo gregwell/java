@@ -32,8 +32,7 @@ public class Square extends Figure implements  Printable{
     @Override
     public void print() {
         System.out.println("Name: " + name);
-        System.out.println("radius: " + name);
-        System.out.println("Area: " + area);
-        System.out.println("Perimeter: " + perimeter);
+        System.out.println("length: " + length);
+        System.out.println("width: " + width);
     }
 }

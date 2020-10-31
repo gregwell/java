@@ -1,9 +1,13 @@
-package com.agh;
+package com.agh.p1_area_calculator;
+
 import java.util.Scanner;
 
-public class Main {
+public class Menu {
 
-    public static void main(String[] args) {
+    public Menu() {
+    }
+
+    public void ShowMenu() {
 
         CircleLoad circle = new CircleLoad();
         SquareLoad square = new SquareLoad();
@@ -11,9 +15,6 @@ public class Main {
         PrismLoad prism = new PrismLoad();
 
         Scanner scanner = new Scanner(System.in);
-
-
-
 
         while(true) {
             System.out.println("Choose figure: 1-square, 2-circle, 3-triangle, 4-regular prism..[0-EXIT]");
@@ -39,7 +40,7 @@ public class Main {
                     break;
             }
         }
-
-
     }
+
+
 }

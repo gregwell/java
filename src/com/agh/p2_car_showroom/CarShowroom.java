@@ -112,4 +112,14 @@ public class CarShowroom {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "CarShowroom{" +
+                "name='" + name + '\'' +
+                ", maxVehicles=" + maxVehicles +
+                ", amount=" + amount +
+                ", vehicleMap=" + vehicleMap +
+                '}';
+    }
 }

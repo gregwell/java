@@ -27,9 +27,10 @@ public class CarShowRoomContainer {
     }
 
     public void summary() {
+        System.out.println("Carshowrooms: ....");
         for (String k : map.keySet()) {
-            double result = (map.get(k).getAmount()) * 1.0 / map.get(k).getMaxVehicles();
-            System.out.println(k + ": " + result);
+            double result = ((map.get(k).getAmount()) * 1.0 / map.get(k).getMaxVehicles())*100;
+            System.out.println(k + ": " + result+"%");
         }
     }
 
